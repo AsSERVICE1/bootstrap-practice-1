@@ -1,0 +1,143 @@
+! to get full html code in Vs Code
+
+ctrl + ? to add comment line
+
+
+<b> and <strong> are symmetric  <strong> can be read by blind person
+
+<I> and <Em> are symmetric
+
+<blockquote> statement pick from another site which is copy write
+
+<blockquote cite="http://en.wikipedia.org/wiki/Winnie-the-Pooh">
+<p>Did you ever stop to think, and forget to start again?</p>
+</blockquote>
+
+<q> is used for double quotation
+
+<abbr> is used for abbreviation
+
+<abbr title="World Health Organization">WHO</abbr>
+
+
+<cite> anything which is important should be written in cite and it will be italic a bit
+
+<ins> is used for highlight 
+
+<del> is used for line on than certain word <s> is also same and currently we are using <s>
+
+for example product price changed from 2000 to 1500 so we will put 2000 in <del> and 1500 in <ins>
+
+<dl> it is known as definition list
+	<dt>calculator</dt>
+	<dd>It is an computing device</dd>
+	<dt></dt>
+	<dd></dd>
+</dl>
+
+this structure is used for example if we have definition and their detail it will automatically add space in detail
+
+in href target="_blank" is used to open the link in new tab
+
+../ to access parent from child in href
+
+../../ to access grand parent from grand child in href
+
+<address> we can add any address in it so search engine will show our address in it
+
+
+add id="" in h1 to navigate within single page
+
+
+<figure>
+<img>
+<figcaption></figcaption>
+</figure>
+
+help in seo
+
+<th> in table use for heading
+
+alt + shift + f to make code good and optimize
+
+<fieldset></fieldset>   use for boudry of the form
+
+<legend></legend>  use for some information in the border or a form
+
+
+
+
+
+//////////	CSS		///////////
+
+connect HTML with Css
+
+<link rel="stylesheet" href="style.css"
+
+
+#introduction {}    id selector
+
+li>a {}     child selector
+
+p  a    {}     descendant selector
+
+hi+p  {}     adjacent selector
+
+h1~p {}   general sibling selector
+
+
+
+
+if font is downloaded but not install we use lets suppose our font name is ubuntu and ttf is a format which most of the browser understand
+
+@font-face
+{
+font-family:'ubuntu';
+src: url('ubuntu-ragular.ttf')
+}
+
+
+text-transform:uppercase;
+
+to uppercase whole paragraph or headind depending on css property
+
+text-transform:lowercase;
+
+to lowercase whole paragraph or headind depending on css property
+
+text-transform:capitalize;
+
+to capitalize each starting word in whole paragraph or heading depending on css property
+
+
+///////		text Decoration		/////////
+
+none, underline, overline, line-through, blink
+
+blink is not supported in new browsers
+
+
+///////		Line Height		//////////
+
+line height use to give dictance between two lines
+
+example : to remove href underline we use text-decoration:none;
+
+
+///////		Letter and word spacing		//////////
+
+
+use for spacing between letter and words
+
+
+///////		vertical allignment		//////////
+
+
+used when we use text with image
+
+text-top, baseline, text-bottom
+
+
+///////		text indend	//////////
+
+use to give second paragraph a bit space after first paragraph

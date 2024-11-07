@@ -1,0 +1,13 @@
+.row1
+{
+width:800px;
+height:auto;
+margin:auto;
+}
+.row1-li
+{
+background-color:red;
+padding:10px;
+margin:20px;
+display:inline;
+}

@@ -1,0 +1,491 @@
+https://getbootstrap.com/docs/5.0/examples/
+
+https://getbootstrap.com/docs/4.0/examples/
+
+
+16px = 1em
+
+! to get full html code in Vs Code
+
+ctrl + ? to add comment line
+
+
+<b> and <strong> are symmetric  <strong> can be read by blind person
+
+<I> and <Em> are symmetric
+
+<blockquote> statement pick from another site which is copy write
+
+<blockquote cite="http://en.wikipedia.org/wiki/Winnie-the-Pooh">
+<p>Did you ever stop to think, and forget to start again?</p>
+</blockquote>
+
+<q> is used for double quotation
+
+<abbr> is used for abbreviation
+
+<abbr title="World Health Organization">WHO</abbr>
+
+
+<cite> anything which is important should be written in cite and it will be italic a bit
+
+<ins> is used for highlight 
+
+<del> is used for line on than certain word <s> is also same and currently we are using <s>
+
+for example product price changed from 2000 to 1500 so we will put 2000 in <del> and 1500 in <ins>
+
+<dl> it is known as definition list
+	<dt>calculator</dt>
+	<dd>It is an computing device</dd>
+	<dt></dt>
+	<dd></dd>
+</dl>
+
+this structure is used for example if we have definition and their detail it will automatically add space in detail
+
+in href target="_blank" is used to open the link in new tab
+
+../ to access parent from child in href
+
+../../ to access grand parent from grand child in href
+
+<address> we can add any address in it so search engine will show our address in it
+
+
+add id="" in h1 to navigate within single page
+
+<span> is an inline statement
+
+
+//////////////		CSS		//////////////////
+
+to connect css with html we use 
+
+<link rel="stylesheet" href="style.css"
+
+font format should be ttf cause it was supported by most of the browser
+
+to add font family without installing let suppose we are using font name ubuntu
+
+@font-face
+{
+font-family:"ubuntu";
+src: url('ubuntu-regular.ttf');
+}
+
+if you dont want to download font we can use embedded code in <html> <head> area
+
+download font will be preferable
+
+
+//////////		text transform		/////////////////////////////////
+
+Uppercase: all letters will be uppercase
+
+Lowercase: all letters will be lowercase
+
+Capitalize: only first letter of each word will be capitalize
+
+
+
+//////////////		text-decoration		//////////////////////////////////
+
+None: to remove any type of decoration for example in href our word got underline we can remove through this
+
+Underline: it will be used to underline text
+
+Overline: to add line over text
+
+line-through: to add a line in center of words
+
+blink: it doesnot support now a days
+
+///////////////		line-height		/////////////////////////////////
+
+Line height: give space between lines
+
+/////////////		letter-spacing, Word-spacing	//////////////////////////////////
+
+Letter spacing: to give space between letters
+
+Word Spacing: to give space between words
+
+
+
+///////////		vertical Align		/////////////////////////
+
+use if we have text and image together
+
+top: move text to up where picture start
+
+baseline: move text to middle
+
+bottom: move text to down where picture end
+
+
+///////		text indent		///////////////////
+
+use to give second paragraph a space from left side for example if we have 2 paragraph and we want to give our second paragraph a space we use
+
+text-indent: 2%;       2% is a random number we can add any
+
+
+
+////////////		text shadow		////////////////
+
+text-shadow: 1px 1px 0px #000000;
+
+first 1px will redirect from left to right shadow
+
+second 1px will redirect from top to bottom shadow
+
+third 0px will use how much dark you want
+
+#000000 which color shadow we want
+
+//////////////		first-letter, first-line		/////////////////
+
+if you want to add font size and weight to first letter we use 
+
+p:first-letter{
+fontsize:100px;
+}
+
+
+///////////////		link, visited		//////////////////////
+
+a:link{
+color:deeppink;
+text-decoration:none;
+}
+a:visited{
+color:black;
+}
+
+
+//////////////////		hover, active, focus		////////////////////////////////////////
+
+hover: can use in input textbar and button
+
+active: only use in button
+
+focus: can use in input textbar and button
+
+
+//////////////			attribute		///////////////
+
+existance: [] matches a specific attribute for example p[class] target and <p> elementwith an attribute called class
+
+equality: [=] matches a specific attribute with a specific value for example p[class="dog"] targets any <p> element with an attribute  called class whose value is dog
+
+space: [~=] matches a specific attribute whose value appears in a space seprated list of words p[class~="dog"] target any <p> element with an attribute called class whose value is a list of space-separated words, one of which is dog
+
+prefix: [^=] target those attribute whose start with certain string p[attr^"d"]
+
+substring: [*=] target those attribute whose have sub strings string p[attr*"dd"]
+
+suffix: [$=] target those attribute whose have end strings string p[attr$"g"]
+
+
+///////////////		max-width, min-width		////////////////////////////
+
+let suppose if a picture is 2000*2000 px and our width is 300px so our picture will be out from our div to control this we use min and max width
+
+
+////////////////	min-height, max-height	/////////////////////////
+
+////////////////	overflow content		///////////////////////
+
+scroll: give a scroll on div right side so if if our content exceed our max height we can see the scroll
+
+hidden: if you want to hide extra text which is exceeding you div
+
+
+///////////////		border, margin, padding		//////////////////////
+
+space between text and border is known as padding
+
+space between 2 element is known as margin
+
+/////////////		border style		/////////////////////
+
+solid
+
+dotted
+
+dashed
+
+double
+
+groove
+
+ridge
+
+inset
+
+outset
+
+hidden/none
+
+//////////////		block, Inline		/////////////////
+
+with this we can convert any inline to block or block to inline
+
+Inline
+
+Block
+
+inline-block
+
+none
+
+///////////		visibility		////////////////
+
+with this we can hide anything but the space will be there
+
+hidden
+
+visible
+
+
+//////////		box shadow	////////////
+
+box-shadow: 1px 1px 0px #000000;
+
+first 1px will redirect from left to right shadow
+
+second 1px will redirect from top to bottom shadow
+
+third 0px will use how much dark you want
+
+#000000 which color shadow we want
+
+
+////////////////		border radius		///////////////////
+
+will round the border edges
+
+border-radius:10px;
+
+
+//////////////////		orderlist to unordered list		/////////////////////
+
+with this css property we can change our order list to unorderlist. and we use this in ol css property
+list-style-type:circle;
+
+with this we can also remove any points
+list-style-type:none;
+
+
+//////////////		list style position		////////////////////////
+
+move the bullet point inside and outside
+
+list-style-position:inside;
+
+
+//////////////		list style all together	////////////////////
+
+list-style: inside square;
+
+//////////		border-spacing		///////////////////
+
+first value space between each cell
+2nd value space between row
+
+border-spacing: 5px 5px;
+
+/////////////		empty-cells:hide;		////////////
+
+use in table
+
+hide empty cells in table
+
+empty-cells:hide;
+
+
+
+/////////		multiple style sheet	///////////////////
+
+can connect multiple css file with html or css
+
+to add multiple css we can doo
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.css">
+
+or to connect with existing css we do 
+
+@import url("index.css")
+
+/////////////		line height ///////////////////
+
+to align text in the middle of div we use
+
+line-height:300px; //our div height
+
+///////////////		to overlap div	///////////////////
+
+z-index:-1;
+
+//////////////		quotation		////////////////
+
+we use <q> tag to give quotation in our paragraph or headings
+
+
+//////////////		An Image as The List Item Marker		/////////////////////////
+
+ul {
+  list-style-image: url('sqpurple.gif');
+}
+
+
+/////////////		Css Writing mode		//////////////////
+
+p.test1 {
+  writing-mode: horizontal-tb;
+}
+
+span.test2 {
+  writing-mode: vertical-rl;
+}
+
+p.test2 {
+  writing-mode: vertical-rl;
+}
+
+
+/////////////////		Text Shadow		///////////////////////////
+
+In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px):
+
+text-shadow: 2px 2px;
+
+Next, add a color to the shadow:
+
+text-shadow: 2px 2px red;
+
+Then, add a blur effect to the shadow:
+
+text-shadow: 2px 2px 5px red;
+
+The following example shows a white text with black, blue, and darkblue shadow:
+
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+
+/////////////////		CSS 2D Transforms Methods		/////////////////////////
+
+With the CSS transform property you can use the following 2D transformation methods:
+
+translate()
+rotate()
+scaleX()
+scaleY()
+scale()
+skewX()
+skewY()
+skew()
+matrix()
+
+////////////////		CSS 3D Transforms Methods		//////////////////////////////
+
+With the CSS transform property you can use the following 3D transformation methods:
+
+rotateX()
+rotateY()
+rotateZ()
+
+
+/////////////////////////		CSS Transitions		/////////////////////////
+
+CSS transitions allows you to change property values smoothly, over a given duration.
+
+Mouse over the element below to see a CSS transition effect:
+
+In this chapter you will learn about the following properties:
+
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-function
+
+
+///////////////		Specify the Speed Curve of the Transition	//////////
+
+The transition-timing-function property specifies the speed curve of the transition effect.
+
+The transition-timing-function property can have the following values:
+
+ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+linear - specifies a transition effect with the same speed from start to end
+ease-in - specifies a transition effect with a slow start
+ease-out - specifies a transition effect with a slow end
+ease-in-out - specifies a transition effect with a slow start and end
+cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+The following example shows some of the different speed curves that can be used:
+
+
+/////////////		Examples of block-level elements:		////////
+
+<div>
+<h1> - <h6>
+<p>
+<form>
+<header>
+<footer>
+<section>
+
+//////////////		Examples of inline elements:		////////////////
+
+<span>
+<a>
+<img>
+
+
+//////////////		::firstline		/////////////////
+
+Note: The ::first-line pseudo-element can only be applied to block-level elements.
+
+The following properties apply to the ::first-line pseudo-element:
+
+font properties
+color properties
+background properties
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear
+
+/////////////		::firstletter		////////////////////
+
+Note: The ::first-letter pseudo-element can only be applied to block-level elements.
+
+The following properties apply to the ::first-letter pseudo- element: 
+
+font properties
+color properties 
+background properties
+margin properties
+padding properties
+border properties
+text-decoration
+vertical-align (only if "float" is "none")
+text-transform
+line-height
+float
+clear
+
+////////////		seletion	//////////////
+
+The ::selection pseudo-element matches the portion of an element that is selected by a user.
+
+The following CSS properties can be applied to ::selection: color, background, cursor, and outline.
+
+The following example makes the selected text red on a yellow background:
